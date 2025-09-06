@@ -24,12 +24,23 @@
 
     header img {
       height: 40px;
+      background: transparent; /* Ensure no white background */
+      display: block;
     }
 
     nav ul {
       list-style: none;
       display: flex;
       gap: 25px;
+      align-items: center; /* Ensure all nav items are vertically aligned */
+      margin: 0;
+      padding: 0;
+    }
+
+    nav li {
+      display: flex;
+      align-items: center; /* Vertically center each nav item */
+      height: 100%;        /* Make sure all items have equal height */
     }
 
     nav a {
@@ -127,7 +138,7 @@
     .section p {
       font-size: 1.1rem;
       margin-bottom: 30px;
-      color: #fff; /* Changed from #333 to white for better contrast */
+      color: #000; /* Ensure all section paragraphs are black for visibility */
     }
 
     .stories {
@@ -225,7 +236,7 @@
     <a href="#" class="btn">See Stories of Change</a>
     <div class="stories">
       <div class="story">
-        <img src=eyJidWNrZXQiOiJkcm9wbWFyayIsImtleSI6IjMwMDAxOC9hMTdlNjkyNzM0YjcxOTZkNDMyNWRhOTI3ZDYxODI5OTFhNmUyMjc2Yzc1MzU5YmVlYjZhY2EzZDIwNjM4NWE1L0pUN0E0NTg5LUVkaXQtRWRpdC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjYw.jpg>
+        <img src="eyJidWNrZXQiOiJkcm9wbWFyayIsImtleSI6IjMwMDAxOC9hMTdlNjkyNzM0YjcxOTZkNDMyNWRhOTI3ZDYxODI5OTFhNmUyMjc2Yzc1MzU5YmVlYjZhY2EzZDIwNjM4NWE1L0pUN0E0NTg5LUVkaXQtRWRpdC5qcGciLCJlZGl0cyI6eyJyZXNpemUiOnsid2lkdGgiOjYw.jpg" alt="Hope in Ethiopia">
         <div class="story-content">
           <h3>Hope in Ethiopia</h3>
           <p>A new well transformed life for hundreds of families, giving them clean water close to home.</p>
